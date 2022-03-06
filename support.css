@@ -1,0 +1,158 @@
+
+*{
+  padding:0;
+  margin :0;
+  outline: 0;
+}
+.templete{
+  width:960px;
+  margin:0 auto;
+
+}
+.clear{overflow:hidden;}
+body{
+  fint-family:arial;
+  font-size: 16px;
+  line-height:24px;
+
+  color:#000;
+
+}
+.headersection{
+  background: #B69162;
+  color: #fff;
+  height: 85px;
+
+
+
+}
+.headersection p{
+  text-align: center;
+}
+
+.navsection{
+  background: green;
+
+}
+.navsection ul{ margin:0; padding:0;
+list-style: none;
+}
+.navsection ul li{display:block;
+float:right;
+
+}
+.navsection ul li a{
+  background: #fff;
+  text-decoration: none;
+  padding: 5px 30px;
+  margin: 5px;
+  font-size:20px;
+  font-weight: bold;
+  color:#444;
+  display:block;
+}
+.navsection ul li a:hover{background:#2F2D2E;color:#fff; }
+.navsection active{
+  background:#000000 ; color:black;   }
+.contentsection{
+background: #FFFFFF;
+}
+
+.Maincontent {
+  width: 650px;
+  padding:10px;
+  margin: 15px 15px 15px 0;
+  background: #F5CFBD none repeat scroll 0 0 ;
+  float: left;
+}
+.samepost{}
+.samepost h2{ margin-bottom:10px;
+padding:10px;
+border-bottom:2px solid #555555;
+font-size: 24px;
+}
+.samepost img{ background: #fff none repeat scroll 0 0;
+border: 1px solid #9b99a;
+float:left;
+margin-right: 10px;
+width:120px;
+padding:10px;
+
+}
+.samepost  p{
+font-size: 16px;
+line-height: 22px;
+text-align: justify;
+}
+
+
+.samesidebar{
+  background: #e1eaf7 none repeat scroll 0 0 ;
+
+
+  margin-top: 15px;
+  padding:10px ;
+}
+.samesidebar h2{
+  background: #9b999a repeat scroll 0 0;
+  padding:10px;
+  color:#fff;
+  margin-bottom: 8px;
+  border-bottom: 2px solid #555555;
+}
+
+.footersection{
+  height: 150px;
+  background:#B69162;
+
+}
+.footersection p{
+  text-align: center;
+  color:#fff;
+  font-size: 20px;
+  padding-top:10px;
+  color:black;
+  font-weight: bold;
+}
+
+.ml6 {
+  position: relative;
+  font-weight: 300;
+  font-size: 2.5em;
+  color: #402d2d;
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+
+}
+
+.ml6 .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  background-color: #402d2d;
+  transform-origin: 0.5 0;
+}
+
+.ml6 .ampersand {
+  font-family: Baskerville, serif;
+  font-style: italic;
+  font-weight: 400;
+  width: 1em;
+  margin-right: -0.1em;
+  margin-left: -0.1em;
+}
+
+.ml6 .letters {
+  display: inline-block;
+  opacity: 0;
+}

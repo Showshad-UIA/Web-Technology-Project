@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Module.css">
+    <title>Webtesch</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<style>
+.ml6 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.3em;
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml12 {
+  font-weight: 200;
+     font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.ml12 .letter {
+ display: inline-block;
+ line-height: 1em;
+}
+
+  details {
+    position:relative;
+  }
+  details summary {
+    display:block;
+    cursor: pointer;
+    color: red;
+  }
+  details summary:focus {
+    outline:none;
+  }
+  details[open] {
+    display:block;
+    padding-bottom:25px;
+    padding-top:10px;
+    animation: open .2s linear;
+  }
+  details[open] summary {
+    position:absolute;
+    bottom: 0;
+    left:0;
+  }
+
+  details #open{padding-left:5px;text-align:middle;}
+  details #open:after{
+      display: inline-block;
+      position:relative;
+      top: -3px;
+      padding-left: 8px;
+      content: "\00bb";
+      transform: rotate(90deg);
+  }
+  details[open] #open{display:none;}
+  details #close{display:none;}
+  details[open] #close{display:block;}
+
+  ::-webkit-details-marker {display: none;}
+
+
+</style>
+  </head>
+  <body>
+    <!-- headersection--->
+          <div class="headersection templete clear">
+
+            <div class="logo"></div>
+            <img src="Images/Logo.jpeg" height="85px"; width="100" alt="Logo">
+            <p>We are ready to serve </p>
+
+
+
+             </div>
+
+
+
+
+    <!--Nevigation section--->
+    <div class="navsection templete clear" >
+            <ul>
+              <li><a href="Support.html"> Support </a></li>
+                <li><a href="Modules.html"> Modules </a></li>
+                  <li><a href="feature.html"> Feature </a></li>
+                  <li><a href="demo.html">Demo</a></li>
+                    <li><a href="index1.html"> Home </a></li>
+
+             </ul>
+          </div>
+    <!--Maincontentsection--->
+          <div class="contentsection templete clear">
+            <div class="Maincontent clear">
+              <div class="samepost clear">
+                <center><h2 class="ml6">
+                  <span class="text-wrapper">
+                    <span class="letters">Core Modules</span>
+                  </span>
+                </h2></center>
+
+                <script> var textWrapper = document.querySelector('.ml6 .letters');
+                textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+                anime.timeline({loop: true})
+                  .add({
+                    targets: '.ml6 .letter',
+                    translateY: ["1.1em", 0],
+                    translateZ: 0,
+                    duration: 750,
+                    delay: (el, i) => 50 * i
+                  }).add({
+                    targets: '.ml6',
+                    opacity: 0,
+                    duration: 1000,
+                    easing: "easeOutExpo",
+                    delay: 1000
+                  });
+                </script>
+                <div Style="font-size:20px;text-align:center;"  >
+                  <h2 class="ml12">RADIOLOGY&PATHOLOGY</h2><br>
+                    <img src="Images/pathology.jpg" alt="Image post" >
+
+                        <p>Receive investigation request, collect sample, faster result entry, deliver reports based on payment status, notification for reagent stock & more.An outpatient department or outpatient clinic is the part of a hospital designed for the treatment of outpatients, people with health problems who visit the hospital for diagnosis or treatment, but do not at this time require a bed or to be admitted for overnight care</p>
+                        <details>
+                         <summary>
+                           <span id="open">Read more...</span>
+                           <span id="close">...Read less</span>
+                         </summary>
+                          <p>
+                            Receive investigation request, collect sample, faster result entry, deliver reports based on payment status, notification for reagent stock & more.An outpatient department or outpatient clinic is the part of a hospital designed for the treatment of outpatients, people with health problems who visit the hospital for diagnosis or treatment, but do not at this time require a bed or to be admitted for overnight care.An outpatient department or outpatient clinic is the part of a hospital designed for the treatment of outpatients, people with health problems who visit the hospital for diagnosis or treatment, but do not at this time require a bed or to be admitted for overnight care andina.
+                           </p>
+                        </details>
+      </div><br><br>
+            <div Style= "font-size:20px;text-align:center;"  >
+              <h2 class="ml13">INPATIENT MANAGMENT</h2>
+                 <img src="Images/inpatients.png" alt="Image post" >
+                        <p>Manage patient admission/discharge/transfer, allocate bed/ward/cabin, patient information, discharged patient list, hospital, pharmacy bill due list & more . An inpatient department or IPD is a unit of a hospital or a healthcare facility where patients are admitted for medical conditions that require appropriate care and attention. An Inpatient Department of the hospital is equipped with beds, medical equipments, round the clock availability of doctors and nurses.</p></h2>
+                        <details>
+                         <summary>
+                           <span id="open">Read more...</span>
+                           <span id="close">...Read less</span>
+                         </summary>
+                          <p>
+                            Receive investigation request, collect sample, faster result entry, deliver reports based on payment status, notification for reagent stock & more.An outpatient department or outpatient clinic is the part of a hospital designed for the treatment of outpatients, people with health problems who visit the hospital for diagnosis or treatment, but do not at this time require a bed or to be admitted for overnight care.admission/discharge/transfer, allocate bed/ward/cabin, patient information, discharged patient list, hospital, pharmacy bill due list & more .
+                           </p>
+                        </details>
+              </div>
+              <br><br>
+
+          <div Style="font-size:20px;text-align:center;" >
+               <h2 class="ml14">OUT PATIENT MANAGEMENT</h2>
+                  <img src="Images/outpatients .jpg" alt="Image post" >
+
+                    <p>Generate patients unique identification number, receive consultation,investigation payment, track due payment, view patients past medical records & more oday's Human Resources function is being transformed by the latest versions of our payroll services solutions. Advance functionalities which include payroll preparation, attendance monitoring, training, safekeeping of employees' files and information can now be made available 24x7, anytime, anywhere. Headquartered in Singapore, our payroll outsourcing solutions encompasses a Self-Service module, where managers and employees are empowered to access and manage their own information and transactions in a paperless environment. Across Asia, business processes can be streamlined while HR professionals can now focus on core competencies and activities such as human interaction, developing strategies and retaining employees when they outsource payroll and engage services exclusively from Payrol .</p>
+                    <details>
+                       <summary>
+                         <span id="open">Read more...</span>
+                         <span id="close">...Read less</span>
+                       </summary>
+                        <p>
+                          Receive investigation request, collect sample, faster result entry, deliver reports based on payment status, notification for reagent stock & more.An outpatient department or outpatient clinic is the part of a hospital designed for the treatment of outpatients, people with health problems who visit the hospital for diagnosis or treatment, but do not at this time require a bed or to be admitted for overnight care.our payroll services solutions. Advance functionalities which include payroll preparation, attendance monitoring, training, safekeeping of employees' files and information can now be made available 24x7, anytime, anywhere. Headquartered in Singapore, our payroll outsourcing solutions encompasses a Self-Service module, where managers and employees are empowered to access and manage their own information and transactions in a paperless environment. Across Asia, business processes can be streamlined while HR professionals can now focus on core competencies and activities such as human interaction, developing strategies and retaining employees when they outsource payroll and engage services exclusively from Payrol.
+                         </p>
+                      </details>
+                </div ><br><br>
+                  <div Style="font-size:20px;text-align:center;" >
+                    <h2 class="ml15">PAYROL</h2>
+                  <img src="Images/payrol.jpg" alt="Payrol " >
+
+
+                      <p>Employee & staff management, attendance, attendance history, leave report, duty roster, salary sheet, payslip, loans & advance tracking & much more.Today's Human Resources function is being transformed by the latest versions of our payroll services solutions. Advance functionalities which include payroll preparation, attendance monitoring, training, safekeeping of employees' files and information can now be made available 24x7, anytime, anywhere. Headquartered in Singapore, our payroll outsourcing solutions encompasses a Self-Service module, where managers and employees are empowered to access and manage their own information and transactions in a paperless environment. Across Asia, business processes can be streamlined while HR professionals can now focus on core competencies and activities such as human interaction, developing strategies and retaining employees when they outsource payroll and engage services exclusively from Payrol</p>
+                      <details>
+                       <summary>
+                         <span id="open">Read more...</span>
+                         <span id="close">...Read less</span>
+                       </summary>
+                        <p>
+                          Investigation request, collect sample, faster result entry, deliver reports based on payment status, notification for reagent stock & more.An outpatient department or outpatient clinic is the part of a hospital designed for the treatment of outpatients, people with health problems who visit the hospital for diagnosis or treatment, but do not at this time require a bed or to be admitted for overnight care.Today's Human Resources function is being transformed by the latest versions of our payroll services solutions. Advance functionalities which include payroll preparation, attendance monitoring, training, safekeeping of employees' files and information can now be made available 24x7, anytime, anywhere. Headquartered in Singapore, our payroll outsourcing solutions encompasses a Self-Service module, where managers and employees are empowered to access and manage their own information and transactions in a paperless environment. Across Asia, business processes can be streamlined while HR professionals can now focus on core competencies and activities such as human interaction, developing strategies and retaining employees when they outsource payroll and engage services exclusively from Payrol
+                         </p>
+                      </details>
+                </div>
+                <br>
+
+                  <div Style="font-size:20px;text-align:center;" ><br><br>
+                <h2 class="ml17">PHARMACY</h2>
+                  <img src="Images/Pharmacy.jpg" alt="P.Image " >
+
+                        <p>Medicine management, alert for expired medicine, low stock notification, gross profit reports, rack/shelf management, medicine sales report & more. Provide general healthcare advice and supply prescription and non-presctiption medication to the public. Assist Branch Manager in managing pharmacy operations according to agreed standards and procedures in order to ensure the agreed profitablity and turnover targets are achieved. Job Requirement: Degree in Pharmacy and registered with Malaysian Pharmaceutical Board and qualified for Licenses A</p>
+                        <details>
+                         <summary>
+                           <span id="open">Read more...</span>
+                           <span id="close">...Read less</span>
+                         </summary>
+                          <p>
+                             Collect sample, faster result entry, deliver reports based on payment status, notification for reagent stock & more.An outpatient department or outpatient clinic is the part of a hospital designed for the treatment of outpatients, people with health problems who visit the hospital for diagnosis or treatment, but do not at this time require a bed or to be admitted for overnight care.Today's Human Resources function is being transformed by the latest versions of our payroll services solutions. Advance functionalities which include payroll preparation, attendance monitoring, training, safekeeping of employees' files and information can now be made available 24x7, anytime, anywhere. Headquartered in Singapore, our payroll outsourcing solutions encompasses a Self-Service module, where managers and employees are empowered to access and manage their own information and transactions in a paperless environment. Across Asia, business processes can be streamlined while HR professionals can now focus on core competencies and activities such as human interaction, developing strategies and retaining employees when they outsource payroll and engage services.
+                           </p>
+                        </details>
+                    </div>
+
+                <div Style="font-size:20px;text-align:center;" ><br><br>
+                    <h2 class="ml18"> DOCUMENTS&LICENSE</h2>
+                       <img src="Images/documents.jpg" alt="Doc image" >
+                        <p>Quick access to license, handle multi-pack licenses, email alert for expiring licenses, smart document management, separate document storing & more.he goal of invariant sections, ever since the 80s when we first made the GNU Manifesto an invariant section in the Emacs Manual, was to make sure they could not be removed. Specifically, to make sure that distributors of Emacs that also distribute non-free software could not remove the statements of our philosophy, which they might think of doing because those statements criticize their actions</p>
+                        <details>
+                         <summary>
+                           <span id="open">Read more...</span>
+                           <span id="close">...Read less</span>
+                         </summary>
+                          <p>
+                            Receive investigation request, collect sample, faster result entry, deliver reports based on payment status, notification for reagent stock & more.An outpatient department or outpatient clinic is the part of a hospital designed for the treatment of outpatients, people with health problems who visit the hospital for diagnosis or treatment, but do not at this time require a bed or to be admitted for overnight care.separate document storing & more.he goal of invariant sections, ever since the 80s when we first made the GNU Manifesto an invariant section in the Emacs Manual, was to make sure they could not be removed. Specifically, to make sure that distributors of Emacs that also distribute non-free software could not remove the statements of our philosophy, which they might think of doing
+                           </p>
+                        </details>
+          </div><br><br>
+
+            <div class = "ADDITIONAL MODULES  templete clear ">
+              <center><h2 class="ml9">
+                <span class="text-wrapper">
+                  <span class="letters">Additional Modules</span>
+                </span>
+              </h2></center>
+             </div><div style="margin-left:100px;"><center>
+             <ul style="float:left;font-size:20px;padding:40px;margin: 30px;border-style: outset;" > Housekeeping </ul>
+             <ul style="float:left;font-size: 20px;padding:40px;margin: 30px; border-style: outset;"> Bloodbank</ul>
+             <ul style="float:left;font-size: 20px;padding:40px;margin: 30px; border-style: outset;"> Ambulance service </ul>
+             <ul style="float:left;font-size: 20px;padding:40px;margin: 30px; border-style: outset;"> Health Card </ul>
+             <ul style="float:left;font-size: 20px;padding:40px;margin: 30px; border-style: outset;"> Medical Record </ul>
+           <ul style="float:left;font-size: 20px;padding:40px;margin: 30px; border-style: outset;"> operation Theatre </ul></center>
+</div>
+                 </div>
+              </div>
+              <!--footersection--->
+              <div class="footersection  templete clear" style="width:930px; padding:50px;">
+
+              <h2 style="text-align:center; color:white; font-size:20px;">CONTACT US<h2><br>
+             <h3 style="text-align:center;">Corporate office</h3>
+
+              <p style="padding-bottom:40px">
+              House:77, level 2,</br> road 2 kualalumpur-Malaysia. Whatsapp: 0113776532<br/>
+              www.YouthHealthCare.com<br>
+              www.Facebook/YouthHealthCare.com <br>
+              @Copyright Mohammad Raihanul Islam
+              </p>
+                </div>
+</div>
+
+<script type="text/javascript">
+  var textWrapper = document.querySelector('.ml12');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml12 .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  }).add({
+    targets: '.ml12 .letter',
+    translateX: [0,-30],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 1100,
+    delay: (el, i) => 100 + 30 * i
+  });
+</script>
+
+<script type="text/javascript">
+  var textWrapper = document.querySelector('.ml13');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml13 .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  }).add({
+    targets: '.ml13 .letter',
+    translateX: [0,-30],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 1100,
+    delay: (el, i) => 100 + 30 * i
+  });
+</script>
+
+<script type="text/javascript">
+  var textWrapper = document.querySelector('.ml14');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml14 .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  }).add({
+    targets: '.ml14 .letter',
+    translateX: [0,-30],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 1100,
+    delay: (el, i) => 100 + 30 * i
+  });
+</script>
+
+<script type="text/javascript">
+  var textWrapper = document.querySelector('.ml15');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml15 .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  }).add({
+    targets: '.ml15 .letter',
+    translateX: [0,-30],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 1100,
+    delay: (el, i) => 100 + 30 * i
+  });
+</script>
+
+<script type="text/javascript">
+  var textWrapper = document.querySelector('.ml17');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml17 .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  }).add({
+    targets: '.ml17 .letter',
+    translateX: [0,-30],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 1100,
+    delay: (el, i) => 100 + 30 * i
+  });
+</script>
+
+<script type="text/javascript">
+  var textWrapper = document.querySelector('.ml18');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml18 .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  }).add({
+    targets: '.ml18 .letter',
+    translateX: [0,-30],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 1100,
+    delay: (el, i) => 100 + 30 * i
+  });
+
+</script>
+
+                <script> var textWrapper = document.querySelector('.ml9 .letters');
+                textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+                anime.timeline({loop: true})
+                  .add({
+                    targets: '.ml9 .letter',
+                    translateY: ["1.1em", 0],
+                    translateZ: 0,
+                    duration: 750,
+                    delay: (el, i) => 50 * i
+                  }).add({
+                    targets: '.ml9',
+                    opacity: 0,
+                    duration: 1000,
+                    easing: "easeOutExpo",
+                    delay: 1000
+                  });
+                </script>
+
+
+
+</body>
+</html>
